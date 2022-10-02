@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+body {
+	font-family: "Lato";
+	color: #424551;
+}
+[class*="__container"] {
+max-width: 1230px;
+margin: 0 auto; 
+}
+.page__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.page__text {
+	line-height: 160%;
+	padding: 8px;
+	margin-bottom: 40px;
+}
+p {
+	margin-bottom: 48px; 
+}
+.page__titlelist {
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+color: #1E212C;
+margin-bottom: 24px;
+}
+ul {
+	margin-bottom: 180px;
+}
+.page__list li {
+	margin-bottom: 4px;
+	line-height: 160%;
+	background: url("../img/Vector.jpg") 0 6px no-repeat;
+	padding-left: 32px;
+}
+h4 {
+	font-weight: 700;
+    line-height: 150%;
+	margin-bottom: 8px;
+	color: #1E212C;
+}
+h2 {
+	font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+}
+.page__line {
+	font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.page__icons {
+	font-weight: 700;
+    line-height: 160%;
+	margin-bottom: 32px;
+}
+.star {
+	background: url("../img/Star\ \(Stroke\).jpg") 0 5px no-repeat;
+	padding-left: 24px;
+}
+.vector {
+	background: url("../img/Vector\ \(1\).jpg") 0 5px no-repeat;
+	padding-left: 24px;
+}
+.students {
+	background: url("../img/Vector\ \(2\).jpg") 0 5px no-repeat;
+	padding-left: 24px;
+}
+
+
+.link:hover {
+	color: darkmagenta;
+}
+.link:focus {
+	outline: 1px solid yellowgreen;
+}
+.block {
+	background-color: chartreuse;
+	padding: 15px;
+}
+.block:hover {
+	background-color: darkred;
+}
+.box {
+	background-color: orchid;
+	padding: 20px;
+}
+.box:hover .box-item {
+	visibility: visible;
+	opacity: 1;
+}
+.box-item {
+	opacity: 0;
+	visibility: hidden;
+}
+.click:hover {
+	color: skyblue;
+	text-decoration: underline;
+}
+.click:active {
+	color: darkgoldenrod;
+}
+a:visited {
+	color: darkblue;
+}
+.target:not(:last-child) {
+	margin-bottom: 5px;
+}
+.list {
+	margin-left: 20px;
+	padding-top: 5px;
+}
+ul .list {
+	display: none;
+}
+ul a + ul {
+	margin-bottom: auto;
+}
+ul li:hover ul {
+	display: block;
+}
+.list>*:last-child {
+	margin-bottom: 0px;
+}
+.effect {
+	background-color: darkorange;
+	color: crimson;
+	padding: 15px;
+	display: none;
+}
+.effect:target {
+	display: block;
+}
+.travel {
+	padding-left: 15px;
+	line-height: 150%;
+	background-color: cornflowerblue;
+	color: darkorange;
+}
+.travel :first-child {
+	color: coral;
+	text-decoration: underline;
+}
+.travel :last-child {
+	color: darkviolet;
+	text-transform: uppercase;
+}
+.travel p:nth-child(3) {
+	color: darkgreen;
+}
+.travel p:not(:last-child) {
+	margin-bottom: 10px;
+}
+span::before {
+	content: "(";
+}
+span::after {
+	content: ")";
+}
+.li {
+	margin-left: 20px;
+}
+.li li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.li li::before {
+	background:  url("../img/Vector.jpg") 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 15px;
+	transition: all 0.8s ease 0s;
+}
+.li li:hover::before {
+	transform: scale(1.5);
+}
+ol {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	counter-reset: item;
+}
+ol li::before {
+	counter-increment: item;
+	content: counter(item) ".";
+	display: inline-block;
+	margin-right: 5px;
+	color: crimson;
+}
+ol li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.play_1 {
+    width: 50px;
+    height: 20px;
+    margin-left: 20px;
+}
+	.play:hover .play_1 {
+	visibility: visible;
+	opacity: 1;
+	background-color: blueviolet;
+}
+.play_1 {
+	opacity: 0;
+	visibility: hidden;
+}
+.play_2 {
+    width: 100px;
+    height: 50px;
+	margin-left: 50px;
+	opacity: 0;
+    visibility: hidden;
+}
+.play:hover .play_2 {
+    visibility: visible;
+	opacity: 1;
+	background-color: blue;
+}
+
+.play_3 {
+    width: 10px;
+    height: 90px;
+    visibility: hidden;
+    margin-left: 140px;
+}
+.play:hover .play_3{
+    visibility: visible;
+	opacity: 1;
+	background-color: darkorange;
+}
+.play_4 {
+	width: 210px;
+    height: 70px;
+    visibility: hidden;
+    margin-left: 140px;
+}
+.play:hover .play_4 {
+    visibility: visible;
+	opacity: 1;
+	background-color: green;
+}
